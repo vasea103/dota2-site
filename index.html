@@ -27,7 +27,7 @@
             overflow-x: hidden;
         }
         
-        /* Анимации */
+  
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -39,7 +39,7 @@
             100% { transform: scale(1); }
         }
         
-        /* Модальное окно */
+   
         .modal {
             display: none;
             position: fixed;
@@ -95,7 +95,7 @@
             border-radius: 5px;
         }
         
-        /* Шапка */
+
         header {
             background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt0c28b0dcc6888a9a/5ebd7f1b92f3e36c5d7d01f0/DOTA2_2020_Heroes_of_the_Storm_1920x1080.jpg') no-repeat center center/cover;
             height: 100vh;
@@ -147,8 +147,7 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
-        
-        /* Навигация */
+
         nav {
             background-color: rgba(26, 26, 26, 0.9);
             position: fixed;
@@ -212,7 +211,7 @@
             cursor: pointer;
         }
         
-        /* Основное содержимое */
+    
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -242,7 +241,7 @@
             transform: translateX(-50%);
         }
         
-        /* Герои */
+  
         .heroes-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -289,7 +288,7 @@
             margin-bottom: 15px;
         }
         
-        /* Новости */
+
         .news-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -352,7 +351,7 @@
             transform: translateX(5px);
         }
         
-        /* Турниры */
+
         .tournaments {
             background: url('https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt9e49a9b69d0a1f6e/5ebd7f1b1b51f36c5d7d01ee/DOTA2_2020_Spring_Clean_1920x1080.jpg') no-repeat center center/cover;
             padding: 100px 0;
@@ -424,8 +423,7 @@
             border-radius: 50%;
             margin-right: 10px;
         }
-        
-        /* Гайды */
+
         .guides-tabs {
             display: flex;
             justify-content: center;
@@ -521,8 +519,7 @@
         .view-guide:hover i {
             transform: translateX(5px);
         }
-        
-        /* Контакты */
+
         .contact-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -615,8 +612,7 @@
             background: var(--accent);
             color: var(--light);
         }
-        
-        /* Подвал */
+
         footer {
             background: var(--dark);
             padding: 50px 0 20px;
@@ -650,8 +646,7 @@
             color: #777;
             font-size: 0.9rem;
         }
-        
-        /* Адаптивность */
+
         @media (max-width: 992px) {
             h1 {
                 font-size: 3rem;
@@ -745,7 +740,7 @@
     </style>
 </head>
 <body>
-    <!-- Модальное окно -->
+
     <div class="modal" id="contentModal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
@@ -756,8 +751,7 @@
         </div>
     </div>
     <style>
-        /* Все предыдущие стили остаются без изменений */
-        /* Добавим только новые стили для галереи */
+
         
         .gallery {
             display: grid;
@@ -797,11 +791,8 @@
     </style>
 </head>
 <body>
-    <!-- Модальное окно и остальная разметка без изменений -->
-    
-    <!-- Добавим новые разделы с галереями изображений -->
-    
-    <!-- Галерея героев -->
+
+
     <section class="section-gallery container">
         <h2 class="gallery-title">Галерея героев Dota 2</h2>
         <div class="gallery">
@@ -826,7 +817,6 @@
         </div>
     </section>
 
-    <!-- Галерея артов -->
     <section class="section-gallery container">
         <h2 class="gallery-title">Фан-арты Dota 2</h2>
         <div class="gallery">
@@ -851,7 +841,6 @@
         </div>
     </section>
 
-    <!-- Галерея турниров -->
     <section class="section-gallery container">
         <h2 class="gallery-title">Турнирные моменты</h2>
         <div class="gallery">
@@ -876,10 +865,8 @@
         </div>
     </section>
 
-    <!-- Остальная часть сайта без изменений -->
     
     <script>
-        // Добавим функционал для просмотра изображений в модальном окне
         document.querySelectorAll('.gallery-item img').forEach(img => {
             img.addEventListener('click', function() {
                 const modalContent = `
@@ -891,11 +878,11 @@
             });
         });
         
-        // Остальной JavaScript код без изменений
+ 
     </script>
 </body>
 
-    <!-- Навигация -->
+ 
     <nav>
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Dota_2_%28only_icon%29.png" alt="Dota 2 Logo" class="nav-logo">
         <button class="mobile-menu-btn">
@@ -911,7 +898,7 @@
         </ul>
     </nav>
 
-    <!-- Шапка -->
+
     <header id="home">
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Dota_2_%28only_icon%29.png" alt="Dota 2 Logo" class="logo">
         <h1>Dota 2 Universe</h1>
@@ -919,9 +906,9 @@
         <a href="#heroes" class="btn">Начать путешествие</a>
     </header>
 
-    <!-- Основное содержимое -->
+
     <main class="container">
-        <!-- Герои -->
+ 
         <section id="heroes">
             <h2>Популярные герои</h2>
             <div class="heroes-grid">
@@ -972,7 +959,6 @@
             </div>
         </section>
 
-        <!-- Новости -->
         <section id="news">
             <h2>Последние новости</h2>
             <div class="news-container">
@@ -1012,7 +998,7 @@
             </div>
         </section>
 
-        <!-- Турниры -->
+  
         <section class="tournaments" id="tournaments">
             <div class="container">
                 <h2>Ближайшие турниры</h2>
@@ -1063,7 +1049,7 @@
             </div>
         </section>
 
-        <!-- Гайды -->
+     
         <section id="guides">
             <h2>Гайды по героям</h2>
             <div class="guides-tabs">
@@ -1146,7 +1132,7 @@
             </div>
         </section>
 
-        <!-- Контакты -->
+     
         <section id="contact">
             <h2>Свяжитесь с нами</h2>
             <div class="contact-container">
@@ -1191,7 +1177,7 @@
         </section>
     </main>
 
-    <!-- Подвал -->
+ 
     <footer>
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Dota_2_%28only_icon%29.png" alt="Dota 2 Logo" class="footer-logo">
         <div class="footer-links">
@@ -1207,7 +1193,7 @@
     </footer>
 
     <script>
-        // Мобильное меню
+      
         const menuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
         
@@ -1217,7 +1203,7 @@
                 '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
         });
         
-        // Плавная прокрутка
+       
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1231,7 +1217,7 @@
                         behavior: 'smooth'
                     });
                     
-                    // Закрываем меню на мобильных после клика
+                   
                     if (navLinks.classList.contains('active')) {
                         navLinks.classList.remove('active');
                         menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
@@ -1240,24 +1226,21 @@
             });
         });
         
-        // Табы гайдов
+       
         const tabBtns = document.querySelectorAll('.tab-btn');
         const tabContents = document.querySelectorAll('.tab-content');
         
         tabBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Удаляем активный класс у всех кнопок и контента
                 tabBtns.forEach(btn => btn.classList.remove('active'));
                 tabContents.forEach(content => content.classList.remove('active'));
                 
-                // Добавляем активный класс к текущей кнопке и соответствующему контенту
                 btn.classList.add('active');
                 const tabId = btn.getAttribute('data-tab');
                 document.getElementById(tabId).classList.add('active');
             });
         });
         
-        // Анимация при прокрутке
         const animateOnScroll = () => {
             const elements = document.querySelectorAll('.hero-card, .news-card, .tournament-card, .guide-card');
             
@@ -1271,8 +1254,7 @@
                 }
             });
         };
-        
-        // Модальное окно
+
         const modal = document.getElementById('contentModal');
         const modalTitle = document.getElementById('modalTitle');
         const modalBody = document.getElementById('modalBody');
@@ -1296,16 +1278,14 @@
                 document.body.style.overflow = 'auto';
             }
         });
-        
-        // Форма обратной связи
+
         const feedbackForm = document.getElementById('feedbackForm');
         feedbackForm.addEventListener('submit', (e) => {
             e.preventDefault();
             alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
             feedbackForm.reset();
         });
-        
-        // Инициализация анимации
+
         window.addEventListener('load', () => {
             document.querySelectorAll('.hero-card, .news-card, .tournament-card, .guide-card').forEach(el => {
                 el.style.opacity = '0';
